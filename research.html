@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Aditi Awasthi</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name">Aditi Awasthi</a>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><button class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+
+    <h1>Research</h1>
+    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+      My work sits at the intersection of quantum computing architecture, compilation, and error correction — with the goal of making fault-tolerant quantum computers practical.
+    </p>
+
+    <!-- Baker Lab -->
+    <section class="section">
+      <h2>Baker Lab</h2>
+      <hr class="section-divider">
+
+      <div class="card">
+        <div class="card-header">
+          <h3>The University of Texas at Austin</h3>
+          <span class="card-date">Aug 2024 – Present</span>
+        </div>
+        <p>
+          Conducting research in quantum computing architecture and error correction geared towards developing robust quantum circuit compilation and optimization techniques.
+        </p>
+
+        <div class="sub-project">
+          <h4>Quantum Resource Estimation for FTQC</h4>
+          <p>
+            Modeled magic-state factory allocation for fault-tolerant quantum circuits, and characterized space–time trade-offs across distillation, cultivation, and R<sub>z</sub>-synthesis regimes under realistic error models.
+          </p>
+        </div>
+
+        <div class="sub-project">
+          <h4>Pipelining and Speculation for FTQC</h4>
+          <p>
+            Designed and analyzed speculative execution and load-balancing strategies for quantum circuits.
+          </p>
+        </div>
+
+        <div class="sub-project">
+          <h4>
+            Trade-offs in Decoding Algorithms for Surface Codes
+            <a href="https://github.com/aditiawas/QECProj" target="_blank" style="font-size: 0.85rem; vertical-align: middle;">↗ GitHub</a>
+          </h4>
+          <p>
+            Analyzed Sparse Blossom decoder performance under limited parallelization and partitioning constraints, identifying optimization strategies for latency vs. accuracy trade-offs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soloveichik Lab -->
+    <section class="section">
+      <h2>Soloveichik Lab</h2>
+      <hr class="section-divider">
+
+      <div class="card">
+        <div class="card-header">
+          <h3>The University of Texas at Austin</h3>
+          <span class="card-date">Jun 2023 – May 2024</span>
+        </div>
+        <p>
+          Conducted research in unconventional computing, specifically computing concentrations of domain-level DNA designs for molecular programming systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- BMSCE Capstone -->
+    <section class="section">
+      <h2>Undergrad Capstone Project</h2>
+      <hr class="section-divider">
+
+      <div class="card">
+        <div class="card-header">
+          <h3>B.M.S. College of Engineering, Bengaluru</h3>
+          <span class="card-date">Aug 2019 – Aug 2020</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5em;">Advisor: Dr. Kayarvizhy N</p>
+        <p>
+          Refined the solution to the de-fencing problem in image enhancement by using frequency-domain analysis, signal processing, and connected component labeling for fence mask refinement.
+          <a href="https://github.com/aditiawas/Defencing-Inpainting" target="_blank">↗ GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section">
+      <h2>Publications</h2>
+      <hr class="section-divider">
+      <p style="color: var(--text-secondary); margin-bottom: 1.2rem; font-size: 0.95rem;">
+        See also: <a href="https://scholar.google.com/citations?user=7v19t0AAAAAJ&sortby=pubdate" target="_blank">Google Scholar profile</a>
+      </p>
+
+      <h3 style="font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Preprints</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">Price and Payoff: Non-determinism in Fault Tolerant Quantum Computation</div>
+        <div class="pub-authors"><strong>A. Awasthi</strong>, S. Sethi, S. Khan, G. S. Ravi, and J. M. Baker</div>
+        <div class="pub-venue">arXiv preprint, 2026 &middot; Submitted to IEEE QCE 2026</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2605.07983" class="pub-link" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Injeqt: Improved Magic-State Injection Protocol for Fault-Tolerant Quantum Extractor Architectures</div>
+        <div class="pub-authors">S. Sethi, S. Khan, <strong>A. Awasthi</strong>, A. Anand, and J. M. Baker</div>
+        <div class="pub-venue">arXiv preprint, 2026 &middot; Submitted to IEEE QCE 2026</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2604.25094" class="pub-link" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <h3 style="font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1.5rem; margin-bottom: 0.5rem;">Conference Papers</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">Effectiveness of Connected Components Labelling Approach in Noise Reduction for Image De-fencing</div>
+        <div class="pub-authors"><strong>A. Awasthi</strong>, D. Bhat, M. Oak, and N. Kayarvizhy</div>
+        <div class="pub-venue">Proceedings of International Conference on Communication and Computational Technologies, Springer, 2021, pp. 635–646</div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1007/978-981-16-3246-4_49" class="pub-link" target="_blank">DOI</a>
+          <a href="https://github.com/aditiawas/Defencing-Inpainting" class="pub-link" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">LegalDB: Long DistilBERT for Legal Document Classification</div>
+        <div class="pub-authors">P. Bambroo and <strong>A. Awasthi</strong></div>
+        <div class="pub-venue">2021 International Conference on Advances in Electrical, Computing, Communication and Sustainable Technologies (ICAECT), pp. 1–4</div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1109/ICAECT49130.2021.9392558" class="pub-link" target="_blank">DOI</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; 2026 Aditi Awasthi</div>
+  </footer>
+
+</body>
+</html>
