@@ -11,15 +11,20 @@
   function apply(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem(STORAGE_KEY, theme);
-    // Update toggle icon
     var btn = document.querySelector('.theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    if (btn) {
+      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
   }
 
-  // Apply immediately (before paint)
+  // Apply theme immediately (before paint)
   apply(getPreferred());
 
   document.addEventListener('DOMContentLoaded', function () {
+    // Sync toggle icon now that the button exists in the DOM
+    apply(document.documentElement.getAttribute('data-theme') || getPreferred());
+
     var btn = document.querySelector('.theme-toggle');
     if (btn) {
       btn.addEventListener('click', function () {
