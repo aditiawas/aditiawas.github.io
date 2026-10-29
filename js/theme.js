@@ -1,4 +1,4 @@
-// Theme toggle — persists choice in localStorage
+// Theme toggle - persists choice in localStorage
 (function () {
   var STORAGE_KEY = 'theme';
 
